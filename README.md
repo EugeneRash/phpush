@@ -1,8 +1,7 @@
 phpush
 ======
 
-
-h2. Configuration
+Configuration
 
 1. Checkout repo 
 2. Put pem certificate somewhere on the server.
@@ -10,17 +9,18 @@ h2. Configuration
 4. Create configuration folder based on default config and populate configuration file
 
 
-h2. Usage
-
+Usage
 * Register Device. GET Request http://server-url.com/index.php?q=register_token&uid=123&token=502f601dd0078
 
 * Send Push Notification. GET Request http://server-url.com/index.php?q=send_message&uid=123&message=messagetText
 
 * Cleanup expired tokens; GET Request http://server-url.com/index.php?q=cleanup_tokens
 
-h2. Return values
+Return values
 
 JSON in format 
-@{"status":"success","message":"description"}@
+{"status":"success","message":"description"}
+
 or
-@{"status":"error","message":"description"}@
+
+{"status":"error","message":"description"}
